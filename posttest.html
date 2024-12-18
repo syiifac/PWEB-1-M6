@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh jQuery</title>
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="fakultas">fkom</div>
+  <input type="text" id="universitas" value="uniku" />
+  <button id="ubah">Ubah Isi</button>
+
+  <script>
+    $(document).ready(function () {
+      $("#ubah").click(function () {
+        // Mengubah isi div dengan id=fakultas
+        $("#fakultas").text("Fakultas Ilmu Komputer");
+        // Mengubah isi input text
+        $("#universitas").val("Universitas Kuningan");
+      });
+    });
+  </script>
+</body>
+</html>

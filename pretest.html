@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh jQuery Tampilkan/Sembunyikan Gambar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #gambar {
+            width: 200px;
+            height: 200px;
+            display: none; /* Sembunyikan gambar secara default */
+        }
+    </style>
+</head>
+<body>
+    <button id="tombol">Tampilkan Gambar</button>
+    <img id="gambar" src="gambar.jpg" alt="Gambar">
+
+    <script>
+        $(document).ready(function(){
+            $("#tombol").click(function(){
+                $("#gambar").toggle(); // Tampilkan/sembunyikan gambar
+            });
+        });
+    </script>
+</body>
+</html>
